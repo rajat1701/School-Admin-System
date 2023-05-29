@@ -26,12 +26,12 @@
   "homepage": "https://github.com/rajat1701/School-Admin-System#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "current-date": "^0.1.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-async-handler": "^1.1.4",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.12.4",
-    "nepali-date-converter": "^3.3.1"
+    "mongoose": "^5.12.4"
   },
   "devDependencies": {
     "concurrently": "^6.0.2",

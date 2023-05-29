@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import NepaliDate from 'nepali-date-converter'
 
 export default class Expense extends Component {
   render() {
@@ -8,7 +7,7 @@ export default class Expense extends Component {
       <div className='innerIncome'>
         <p>{this.props.i}</p>
         <p>
-          {new NepaliDate(new Date(this.props.createdAt)).format('YYYY-MM-DD')}
+         // {new Date(new Date(this.props.createdAt)).format('YYYY-MM-DD')}
         </p>
         <p>
           Total Salary paid Rs {this.props.salaryAmount} to{' '}

@@ -1,11 +1,11 @@
-import mongoose from 'mongoose'
+import mongoose from "mongoose";
 const studentAttendanceSchema = mongoose.Schema({
   class_teacher: {
     type: String,
     required: true,
   },
   attendance_date: {
-    type: Date,
+    type: String,
     default: Date.now(),
   },
   classname: {
@@ -36,10 +36,10 @@ const studentAttendanceSchema = mongoose.Schema({
       timestamps: true,
     },
   ],
-})
+});
 
 const StudentAttendance = mongoose.model(
-  'StudentAttendance',
+  "StudentAttendance",
   studentAttendanceSchema
-)
-export default StudentAttendance
+);
+export default StudentAttendance;

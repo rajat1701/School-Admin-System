@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Loader from "../components/Loader";
 // import Message from '../components/Message'
-import NepaliDate from "nepali-date-converter";
 import Expense from "../components/Expense";
 import ReactToPrint from "react-to-print";
 

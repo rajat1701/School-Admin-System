@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Message from "../components/Message";
-import NepaliDate from "nepali-date-converter";
 import dayjs from "dayjs";
 import { PayFees } from "../actions/studentActions";
 import Loader from "../components/Loader";

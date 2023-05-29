@@ -5,7 +5,6 @@ import {
   studentAttendances,
 } from "../actions/studentActions";
 import { STUDENT_ATTENDANCE_RESET } from "../constants/studentConstants";
-import NepaliDate from "nepali-date-converter";
 import Loader from "../components/Loader";
 import Message from "../components/Message";
 import axios from "axios";

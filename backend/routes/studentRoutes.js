@@ -2,7 +2,6 @@ import express from "express";
 import asyncHandler from "express-async-handler";
 import Student from "../models/studentModel.js";
 import capitalize from "../config/capitalize.js";
-import NepaliDate from "nepali-date-converter";
 import StudentFees from "../models/studentFeesModel.js";
 import protect from "../middleware/authMiddleware.js";
 import StudentAttendance from "../models/studentAttendanceModel.js";
