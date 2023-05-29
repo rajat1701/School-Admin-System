@@ -1,0 +1,103 @@
+.container{
+    height:100vh;
+    background: url("landing-background.jpg");
+    padding:10px;
+    /* overflow-y: hidden; */
+    /* display: grid; */
+    /* place-content: center; */
+    /* place-items: center; */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    padding: 10px;
+    /* display: grid; */
+    /* place-items: center; */
+    /* place-content: center; */
+}
+
+.layout
+{
+    padding: 40px;
+    margin:auto;
+    max-width: 530px;
+    /* height:400px; */
+    margin-top: 100px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.signinh1{
+    margin: auto;
+    margin-top: 5px;
+    padding :4px;
+    /* border:2px solid red; */
+    text-align: center;
+    color:#001e1d;
+    background: #f9bc60;
+    margin-bottom: 30px;
+}
+.remember-me{
+    display: block;
+    margin-top: 20px;
+    color:#001e1d;
+}
+#check{
+    margin-right: 10px;
+}
+.form-field{
+border: 1px solid;
+    padding:10px;
+    margin: 3px 3px 3px 0;
+    /* display: block; */
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn{
+    /* display: block; */
+    width:100%;
+    padding:10px;
+    margin-top: 30px;
+    cursor:pointer;
+    background:#001e1d;
+    outline: none;
+    border:none;
+    color:white;
+    font-size: 20px;
+    text-transform: uppercase;
+    
+}
+.password-eye {
+    display: grid;
+    grid-template-columns: 1fr 0.1fr ;
+    /* gap:-5px; */
+}
+.password-eye input{
+    border: 1px solid;
+    /* border:2px solid red; */
+    /* margin-right: 4px; */
+}
+/* .password-eye input[type=text]{
+    font-size: 20px;
+    color:red;
+} */
+#eye{
+    /* border:2px solid red; */
+    margin:auto;
+    background: white;
+    padding:10px;
+    margin-top: 10px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+}
+.heading{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px 15PX;
+    background-color: #001e1d;
+    color: white;
+}
