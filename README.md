@@ -52,7 +52,7 @@ CLOUDINARY_UPLOAD_PRESET
 ### `Running`
 
 ```bash
-Go to the root folder
+Go to the backend folder
 npm run server
 
 Go to the frontend folder
