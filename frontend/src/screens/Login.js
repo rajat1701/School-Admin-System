@@ -89,7 +89,7 @@ const Login = ({ history, location }) => {
             </button>
           </form>
         )}
-
+        <h5>Guest User credentials: sampleadmin@gmail.com,12345</h5> 
         {/* {} */}
       </div>
     </div>

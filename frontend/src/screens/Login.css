@@ -26,6 +26,7 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  text-align: center;
 }
 
 .signinh1{

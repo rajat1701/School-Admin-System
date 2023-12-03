@@ -60,10 +60,3 @@ npm run start
 
 (Make sure your mongodb database is running)
 ```
-
-### `LOGIN CREDENTIALS FOR TESTING`
-
-```bash
-Login email="rajatmalik1701@gmail.com"
-Login password="12345"
-```
