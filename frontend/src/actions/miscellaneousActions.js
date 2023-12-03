@@ -12,7 +12,7 @@ export const particularMonthYear = (year, month) => async (dispatch) => {
     dispatch({
       type: ALL_INCOME_REQUEST,
     })
-    const { data } = await axios.get(`/api/teachers/allincome/${year}/${month}`)
+    const { data } = await axios.get(`${window.location.origin}/api/teachers/allincome/${year}/${month}`)
     dispatch({
       type: ALL_INCOME_SUCCESS,
       payload: data,
@@ -33,7 +33,7 @@ export const particularYear = (year, month) => async (dispatch) => {
     dispatch({
       type: ALL_INCOME_REQUEST,
     })
-    const { data } = await axios.get(`/api/teachers/allincome/${year}`)
+    const { data } = await axios.get(`${window.location.origin}/api/teachers/allincome/${year}`)
     dispatch({
       type: ALL_INCOME_SUCCESS,
       payload: data,
@@ -54,7 +54,7 @@ export const alltillNow = () => async (dispatch) => {
     dispatch({
       type: ALL_INCOME_REQUEST,
     })
-    const { data } = await axios.get(`/api/teachers/allincome`)
+    const { data } = await axios.get(`${window.location.origin}/api/teachers/allincome`)
     dispatch({
       type: ALL_INCOME_SUCCESS,
       payload: data,
@@ -76,7 +76,7 @@ export const particularMonthYearSalary = (year, month) => async (dispatch) => {
     dispatch({
       type: ALL_SALARY_REQUEST,
     })
-    const { data } = await axios.get(`/api/teachers/allsalary/${year}/${month}`)
+    const { data } = await axios.get(`${window.location.origin}/api/teachers/allsalary/${year}/${month}`)
     dispatch({
       type: ALL_SALARY_SUCCESS,
       payload: data,
@@ -97,7 +97,7 @@ export const particularYearSalary = (year) => async (dispatch) => {
     dispatch({
       type: ALL_SALARY_REQUEST,
     })
-    const { data } = await axios.get(`/api/teachers/allsalary/${year}`)
+    const { data } = await axios.get(`${window.location.origin}/api/teachers/allsalary/${year}`)
     dispatch({
       type: ALL_SALARY_SUCCESS,
       payload: data,
@@ -118,7 +118,7 @@ export const alltillNowSalary = () => async (dispatch) => {
     dispatch({
       type: ALL_SALARY_REQUEST,
     })
-    const { data } = await axios.get(`/api/teachers/allsalaries`)
+    const { data } = await axios.get(`${window.location.origin}/api/teachers/allsalaries`)
     console.log("data is",data)
     dispatch({
       type: ALL_SALARY_SUCCESS,

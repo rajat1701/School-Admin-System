@@ -30,7 +30,7 @@ export const listStudents = () => async (dispatch) => {
     dispatch({
       type: STUDENT_LIST_REQUEST,
     });
-    const { data } = await axios.get("/api/students");
+    const { data } = await axios.get(`${window.location.origin}/api/students`);
     dispatch({
       type: STUDENT_LIST_SUCCESS,
       payload: data,
@@ -52,7 +52,7 @@ export const classlistStudent = (id) => async (dispatch) => {
     dispatch({
       type: STUDENT_CLASS_LIST_REQUEST,
     });
-    const { data } = await axios.get(`/api/students/class/${id}`);
+    const { data } = await axios.get(`${window.location.origin}/api/students/class/${id}`);
     dispatch({
       type: STUDENT_CLASS_LIST_SUCCESS,
       payload: data,
@@ -76,7 +76,7 @@ export const studentSearch = (name, classname, rollno) => async (dispatch) => {
     });
     console.log(name, classname, rollno);
     const { data } = await axios.get(
-      `/api/students/search/${name}/${classname}/${rollno}`
+      `${window.location.origin}/api/students/search/${name}/${classname}/${rollno}`
     );
     console.log("Data is ", data);
     dispatch({
@@ -126,7 +126,7 @@ export const Register =
         },
       };
       const { data } = await axios.post(
-        "/api/students/register",
+        `${window.location.origin}/api/students/register`,
         {
           student_name,
           classname,
@@ -166,7 +166,7 @@ export const deleteStudent = (id) => async (dispatch) => {
     dispatch({
       type: STUDENT_DELETE_REQUEST,
     });
-    const { data } = await axios.delete(`/api/students/delete/${id}`);
+    const { data } = await axios.delete(`${window.location.origin}/api/students/delete/${id}`);
     dispatch({
       type: STUDENT_DELETE_SUCCESS,
       payload: data,
@@ -201,7 +201,7 @@ export const studentAttendances =
         },
       };
       const { data } = await axios.post(
-        `/api/students/attendance/${classname}`,
+        `${window.location.origin}/api/students/attendance/${classname}`,
         {
           students,
         },
@@ -258,7 +258,7 @@ export const PayFees =
         },
       };
       const { data } = await axios.post(
-        `/api/students/fees/${studentId}`,
+        `${window.location.origin}/api/students/fees/${studentId}`,
         {
           student_name,
           classname,

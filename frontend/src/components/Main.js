@@ -8,7 +8,7 @@ const Main = () => {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState();
   useEffect(() => {
-    // await axios.get('/api/students/:classes')
+    // await axios.get(`${window.location.origin}/api/students/:classes`)
     const fetchItems = async () => {
       setLoading(true);
       const { data } = await axios.get("/dashboard");

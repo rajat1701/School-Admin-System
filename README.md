@@ -60,3 +60,6 @@ npm run start
 
 (Make sure your mongodb database is running)
 ```
+### `Deployed At`
+https://schooladminsystem.vercel.app/
+

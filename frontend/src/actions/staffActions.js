@@ -38,7 +38,7 @@ export const PaySalary =
         },
       };
       const { data } = await axios.post(
-        `/api/STAFFs/fees/${staffname}/${staffid}`,
+        `${window.location.origin}/api/STAFFs/fees/${staffname}/${staffid}`,
         {
           salaryForTheYear,
           salaryForTheMonth,
@@ -98,7 +98,7 @@ export const staffregister =
         },
       };
       const { data } = await axios.post(
-        "/api/staffs/register",
+        `${window.location.origin}/api/staffs/register`,
         {
           staff_name,
 
@@ -141,7 +141,7 @@ export const deleteStaff = (id) => async (dispatch) => {
     dispatch({
       type: STAFF_DELETE_REQUEST,
     });
-    const { data } = await axios.delete(`/api/staffs/delete/${id}`);
+    const { data } = await axios.delete(`${window.location.origin}/api/staffs/delete/${id}`);
     dispatch({
       type: STAFF_DELETE_SUCCESS,
       payload: data,
@@ -164,7 +164,7 @@ export const listStaffs = () => async (dispatch) => {
     dispatch({
       type: STAFF_LIST_REQUEST,
     });
-    const { data } = await axios.get("/api/staffs");
+    const { data } = await axios.get(`${window.location.origin}/api/staffs`);
     dispatch({
       type: STAFF_LIST_SUCCESS,
       payload: data,

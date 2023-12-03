@@ -25,10 +25,10 @@ const StaffRegister = ({ history }) => {
   const [estimated_salary, setEstimated_salary] = useState("");
   //  const [image, setImage] = useState("");
   // const uploadFileHandler = async (e) => {
-  //   const { data: CLOUDINARY_URL } = await axios.get("/api/config/cloudinary");
+  //   const { data: CLOUDINARY_URL } = await axios.get(`${window.location.origin}/api/config/cloudinary`);
 
   //   const { data: CLOUDINARY_UPLOAD_PRESET } = await axios.get(
-  //     "/api/config/cloudinarypreset"
+  //     `${window.location.origin}/api/config/cloudinarypreset`
   //   );
   //   setTime(true);
   //   setTimeout(() => {

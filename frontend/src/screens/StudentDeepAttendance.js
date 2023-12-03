@@ -32,7 +32,7 @@ const StudentDeepAttendance = ({ match }) => {
   useEffect(() => {
     const studentsAttend = async () => {
       const { data } = await axios.get(
-        `/api/students/class/${matchid}/attendance`
+        `${window.location.origin}/api/students/class/${matchid}/attendance`
       );
       setStudentlist(data.students);
       // console.log('attended once', data)
